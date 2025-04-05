@@ -1,0 +1,5 @@
+34	H4TtLFSDoM9qKp8hm	Yu☆Gi☆Oh! Duel Monsters (224 episodes)
+1	3bL3Gyno8h27GQPkM	Carole & Tuesday (24 episodes)
+54	yquCdfW4DjcS533oR	Dragon Ball (153 episodes)
+3	iPHTKSkRi6o5PtrTk	Kusuriya no Hitorigoto Season 2 (11 episodes)
+3	vdQ84BfvTwshJdWaP	Goblin Slayer II (12 episodes)
