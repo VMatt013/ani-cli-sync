@@ -3,11 +3,8 @@
 # Synchronizes the local ani-cli history with the remote history.
 # if the files are identical, exit the script
 
-if cmp --silent -- ani-hsts ani-hsts.b; then
+if git pull; then
   echo "files contents are identica"
 else
   echo "files differ"
-  git add .
-  git commit -m "sync ani-cli history"
-  git push
 fi
