@@ -1,10 +1,20 @@
 #!/bin/bash
 
-# Synchronizes the local ani-cli history with the remote history.
-# if the files are identical, exit the script
+# Synchronizes the local ani-hsts file with the remote repository
 
-if git pull; then
-  echo "files contents are identica"
-else
-  echo "files differ"
+set -e
+
+FILE="ani-hsts"
+BACKUP="$FILE.b"
+
+git pull -q
+
+if ! cmp -s "$FILE" "$BACKUP"; then
+
+  cp "$FILE" "$BACKUP"
+
+  git add "$FILE" > /dev/null
+  git commit -m "$FILE updated" -q
+  git push -q
 fi
+
